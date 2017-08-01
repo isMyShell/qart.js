@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>二维码生成插件</title>
+    <div id="qart">
+        
+    </div>
+</head>
+<body>
+    <script src='./index.js'>
+        
+    </script>
+    <script src="./qart.js"></script>
+    <script>
+        new QArt({
+        value: 'https://www.baidu.com',
+        imagePath: './example.jpg',
+        filter: 'color',
+        size: 195
+        }).make(document.getElementById('qart'));
+    </script>
+</body>
+</html>
